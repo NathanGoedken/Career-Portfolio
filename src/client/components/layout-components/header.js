@@ -3,28 +3,33 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledHeaderContainer = styled.div`
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: baseline;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    background-color: #000000;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 `;
-const StyledHeaderBorder = styled.div`
-        border-bottom: 1px solid;
-        border-color: #D3D3D3;
+const StyledHeaderContentContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 20px;
+    margin-bottom: 20px;
 `;
 const StyledLinksContainer = styled.div`
-        margin-right: 10%;
+    margin-right: 10%;
 `;
 const StyledLink = styled.a`
-    color: #3D3A38;
+    color: #FFFFFF;
     font-size: 20px;
     :hover {
-        color: red;
+        color: #FFFFFF;
         cursor: pointer;
         border-bottom: 2px solid;
-        border-color: black;
+        border-color: #FFFFFF;
     }
 `;
 const StyledLogo = styled.span`
@@ -33,8 +38,8 @@ const StyledLogo = styled.span`
     font-size: 26px;
 `;
 const Header = () =>
-    <>
-        <StyledHeaderContainer>
+    <StyledHeaderContainer>
+        <StyledHeaderContentContainer>
             <StyledLinksContainer>
                 <Link href={'/career-portfolio/about-me'}>
                     <StyledLink>{'About Me'}</StyledLink>
@@ -55,7 +60,6 @@ const Header = () =>
                     <StyledLink>{'Contact Me'}</StyledLink>
                 </Link>
             </StyledLinksContainer>
-        </StyledHeaderContainer>
-        <StyledHeaderBorder />
-    </>;
+        </StyledHeaderContentContainer>
+    </StyledHeaderContainer>;
 export default Header;

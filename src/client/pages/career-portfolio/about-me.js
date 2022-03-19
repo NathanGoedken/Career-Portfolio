@@ -1,12 +1,13 @@
 import React from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
+import Button from '@material-ui/core/Button';
 
 import Layout from '../../components/layout';
 
 const AboutMe = () =>
     <Layout>
         <Link href="/career-portfolio">
-            <a>Home</a>
+            <Button variant="contained" color="primary">{'Home'}</Button>
         </Link>
         <div>
             <p>{'hello'}</p>

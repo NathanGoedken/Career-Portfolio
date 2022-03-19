@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import Header from './layout-components/header';
 
 const LayoutStyle = styled.div`
@@ -9,30 +10,24 @@ const LayoutStyle = styled.div`
     width: '100%';
 `;
 const ContentStyle = styled.div`
-    display: 'flex';
-    flex: 1;
-    flexDirection: 'column';
-    height: 100%
+    background-image: url(../images/homepage.jpeg);
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    height: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
 `;
-const StyledBodyContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-`;
-const StyledBodyContentContainer = styled.div`
-    margin-top: 50px;
-    margin-left: 15%;
-    margin-right: 30%;
-`;
+const StyledBodyContentContainer = styled.div``;
 
 const RedboxRx = props => (
     <LayoutStyle>
         <Header />
         <ContentStyle>
-            <StyledBodyContainer>
-                <StyledBodyContentContainer>
-                    {props.children}
-                </StyledBodyContentContainer>
-            </StyledBodyContainer>
+            <StyledBodyContentContainer>
+                {props.children}
+            </StyledBodyContentContainer>
         </ContentStyle>
     </LayoutStyle>
 );

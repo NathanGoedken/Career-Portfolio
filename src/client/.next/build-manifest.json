@@ -30,11 +30,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/career-portfolio.js"
     ],
-    "/career-portfolio/about-me": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/career-portfolio/about-me.js"
-    ],
     "/career-portfolio/work-history": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
