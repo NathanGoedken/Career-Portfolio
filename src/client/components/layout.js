@@ -1,7 +1,9 @@
 import React from 'react';
+import Image from 'next/image';
 import styled from 'styled-components';
 
 import Header from './layout-components/header';
+import homePageBackground from '../../public/homepage.png';
 
 const LayoutStyle = styled.div`
     display: 'flex';
@@ -10,7 +12,6 @@ const LayoutStyle = styled.div`
     width: '100%';
 `;
 const ContentStyle = styled.div`
-    background-image: url(../images/homepage.png);
     position: absolute;
     top: 10%;
     left: 0;
@@ -25,9 +26,11 @@ const RedboxRx = props => (
     <LayoutStyle>
         <Header />
         <ContentStyle>
+            {/* <div style={{background: homePageBackground}}>Text here</div> */}
             <StyledBodyContentContainer>
                 {props.children}
             </StyledBodyContentContainer>
+            {/* <Image src={homePageBackground} alt="homePage Background" /> */}
         </ContentStyle>
     </LayoutStyle>
 );
