@@ -1,11 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
 import Layout from '../../components/layout';
 
-const AboutMe = () =>
+const StyledWorkHistoryBodyContainer = styled.div`
+    background-image: url(../images/work.jpg);
+`;
+
+const ContactMe = () =>
     <Layout>
-        <div>
+        <StyledWorkHistoryBodyContainer>
             <p>{'hello'}</p>
-        </div>
+        </StyledWorkHistoryBodyContainer>
     </Layout>;
 
-export default AboutMe;
+export default ContactMe;

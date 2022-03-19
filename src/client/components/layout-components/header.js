@@ -15,7 +15,7 @@ const StyledHeaderBorder = styled.div`
         border-color: #D3D3D3;
 `;
 const StyledLinksContainer = styled.div`
-        width: 10%;
+        margin-right: 10%;
 `;
 const StyledLink = styled.a`
     color: #3D3A38;
