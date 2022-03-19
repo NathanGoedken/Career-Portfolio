@@ -15,7 +15,7 @@ const StyledHeaderContentContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
 `;
@@ -32,14 +32,15 @@ const StyledLink = styled.a`
         border-color: #FFFFFF;
     }
 `;
-const StyledLogo = styled.span`
-    color: red;
-    font-family: Arial;
-    font-size: 26px;
-`;
+
 const Header = () =>
     <StyledHeaderContainer>
         <StyledHeaderContentContainer>
+            <StyledLinksContainer>
+                <Link href={'/career-portfolio'}>
+                    <StyledLink>{'Nathan Goedken'}</StyledLink>
+                </Link>
+            </StyledLinksContainer>
             <StyledLinksContainer>
                 <Link href={'/career-portfolio/about-me'}>
                     <StyledLink>{'About Me'}</StyledLink>
@@ -62,4 +63,5 @@ const Header = () =>
             </StyledLinksContainer>
         </StyledHeaderContentContainer>
     </StyledHeaderContainer>;
+
 export default Header;

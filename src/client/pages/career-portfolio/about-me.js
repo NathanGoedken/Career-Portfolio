@@ -6,9 +6,9 @@ import Layout from '../../components/layout';
 
 const AboutMe = () =>
     <Layout>
-        <Link href="/career-portfolio">
+        {/* <Link href="/career-portfolio">
             <Button variant="contained" color="primary">{'Home'}</Button>
-        </Link>
+        </Link> */}
         <div>
             <p>{'hello'}</p>
         </div>

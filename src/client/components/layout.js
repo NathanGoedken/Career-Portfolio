@@ -10,7 +10,7 @@ const LayoutStyle = styled.div`
     width: '100%';
 `;
 const ContentStyle = styled.div`
-    background-image: url(../images/homepage.jpeg);
+    background-image: url(../images/homepage.png);
     position: absolute;
     top: 10%;
     left: 0;
