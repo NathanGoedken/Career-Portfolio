@@ -12,7 +12,7 @@ const ContentStyle = styled.div`
     display: 'flex';
     flex: 1;
     flexDirection: 'column';
-    height: 100%;
+    height: 100%
 `;
 const StyledBodyContainer = styled.div`
     display: flex;
@@ -23,6 +23,7 @@ const StyledBodyContentContainer = styled.div`
     margin-left: 15%;
     margin-right: 30%;
 `;
+
 const RedboxRx = props => (
     <LayoutStyle>
         <Header />

@@ -25,20 +25,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/career-portfolio": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/career-portfolio.js"
+    ],
     "/career-portfolio/about-me": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/career-portfolio/about-me.js"
     ],
-    "/career-portfolio/contact-me": [
+    "/career-portfolio/work-history": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/career-portfolio/contact-me.js"
-    ],
-    "/career-portfolio/interests-and-hobbies": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/career-portfolio/interests-and-hobbies.js"
+      "static/chunks/pages/career-portfolio/work-history.js"
     ]
   },
   "ampFirstPages": []
