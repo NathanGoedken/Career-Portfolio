@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LinkedInLogo = () =>
+const LinkedInLogo = ({height, width}) =>
     <svg
         xmlns="http://www.w3.org/2000/svg"
         role="img"
@@ -10,6 +10,8 @@ const LinkedInLogo = () =>
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
+        height={height}
+        width={width}
         className="feather feather-linkedin"
     >
         <title>LinkedIn</title>

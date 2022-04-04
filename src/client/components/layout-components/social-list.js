@@ -19,17 +19,26 @@ const SocialList = () =>
         <ul>
             <li>
                 <a href="https://github.com/NathanGoedken">
-                    <GithubLogo />
+                    <GithubLogo
+                        height='25px'
+                        width='25px'
+                    />
                 </a>
             </li>
             <li>
                 <a href="https://github.com/NathanGoedken">
-                    <TwitterLogo />
+                    <TwitterLogo
+                        height='25px'
+                        width='25px'
+                    />
                 </a>
             </li>
             <li>
                 <a href="https://www.linkedin.com/in/nathan-goedken-543129a7">
-                    <LinkedInLogo />
+                    <LinkedInLogo
+                        height='25px'
+                        width='25px'
+                    />
                 </a>
             </li>
         </ul>

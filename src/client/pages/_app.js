@@ -10,7 +10,7 @@ const MyApp = ({ Component, pageProps }) =>
         `}
         </style>
         <Layout>
-            <Component {...pageProps} />;
+            <Component {...pageProps} />
         </Layout>
     </div>;
 

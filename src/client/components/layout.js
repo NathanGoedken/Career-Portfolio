@@ -30,6 +30,7 @@ const Layout = props => (
                 {props.children}
             </StyledBodyContentContainer>
         </ContentStyle>
+        <SocialList />
     </LayoutStyle>
 );
 export default Layout;
