@@ -3,15 +3,14 @@ import styled from 'styled-components';
 
 const StyledEmailLink = styled.a`
     color: #64ffda;
-    backgroundColor: transparent;
-    border: 1px solid #64ffda;
-    borderRadius: 30px;
-    padding: 1.25rem 1.75rem;
-    fontSize: 20px;
-    lineHeight: 1;
-    textDecoration: none;
-    cursor: pointer;
-    marginTop: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    :hover {
+        color: #64ffda;
+        cursor: pointer;
+        border-bottom: 2px solid;
+        border-color: #64ffda;
+    }
 `;
 
 const Resume = () =>

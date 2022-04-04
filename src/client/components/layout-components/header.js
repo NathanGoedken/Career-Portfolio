@@ -6,7 +6,7 @@ import Resume from '../buttons/resume';
 const StyledHeaderContainer = styled.div`
     background-color: #000000;
     width: 100%;
-    height: 10%;
+    height: 70px;
     position: absolute;
     top: 0;
     left: 0;
