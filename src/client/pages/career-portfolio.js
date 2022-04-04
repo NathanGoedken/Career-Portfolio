@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Layout from '../components/layout';
 import Link from 'next/link';
 
 const IntroductionContainer = styled.div`
-    margin-top: 15%;
+    margin-top: 100px;
 `;
 
 const IntroLine = styled.span`
@@ -52,40 +51,38 @@ const StyledPageNavLink = styled.a`
 `;
 
 const LandingPage = () =>
-    <Layout>
-        <IntroductionContainer>
-            <IntroLine>{'Hi my name is'}</IntroLine>
-            <IntroName>
-                {'Nathan Goedken'}
-            </IntroName>
-            <IntroDescrip>
-                {'I build Digital Solutions for the Web and sometimes wander into the Data World'}
-            </IntroDescrip>
-            <IntroBodyTextConatiner>
-                <IntroBodyText>{'I\'m a full stack engineer that enjoys building solutions that allow users to awesome digital experience while also making their lives easier! '}</IntroBodyText>
-                <IntroBodyText>{'Previously I spent some years building out digital pharmacy solutions with an amazing team. ' +
-                'Currently I am Focused/Working on Digital Coupons, Digital Deals as well as providing various other Digital Offers! '}</IntroBodyText>
+    <IntroductionContainer>
+        <IntroLine>{'Hi my name is'}</IntroLine>
+        <IntroName>
+            {'Nathan Goedken'}
+        </IntroName>
+        <IntroDescrip>
+            {'I build Digital Solutions for the Web and sometimes wander into the Data World'}
+        </IntroDescrip>
+        <IntroBodyTextConatiner>
+            <IntroBodyText>{'I\'m a full stack engineer that enjoys building solutions that allow users to awesome digital experience while also making their lives easier! '}</IntroBodyText>
+            <IntroBodyText>{'Previously I spent some years building out digital pharmacy solutions with an amazing team. ' +
+            'Currently I am Focused/Working on Digital Coupons, Digital Deals as well as providing various other Digital Offers! '}</IntroBodyText>
 
-                <PageNavContainer>
-                    <IntroBodyText>{'Feel Free to browse around and learn more about me, my work experience as well as how to contact me!'}</IntroBodyText>
-                    <StyledUnorderedList>
-                        <Link href="/career-portfolio/about-me">
-                            <StyledPageNavLink>{'About Me!'}</StyledPageNavLink>
-                        </Link>
-                    </StyledUnorderedList>
-                    <StyledUnorderedList>
-                        <Link href="/career-portfolio/work-history">
-                            <StyledPageNavLink>{'Work History'}</StyledPageNavLink>
-                        </Link>
-                    </StyledUnorderedList>
-                    <StyledUnorderedList>
-                        <Link href="/career-portfolio/contact-me">
-                            <StyledPageNavLink>{'Contact Me!'}</StyledPageNavLink>
-                        </Link>
-                    </StyledUnorderedList>
-                </PageNavContainer>
-            </IntroBodyTextConatiner>
-        </IntroductionContainer>
-    </Layout>;
+            <PageNavContainer>
+                <IntroBodyText>{'Feel Free to browse around and learn more about me, my work experience as well as how to contact me!'}</IntroBodyText>
+                <StyledUnorderedList>
+                    <Link href="/career-portfolio/about-me">
+                        <StyledPageNavLink>{'About Me!'}</StyledPageNavLink>
+                    </Link>
+                </StyledUnorderedList>
+                <StyledUnorderedList>
+                    <Link href="/career-portfolio/work-history">
+                        <StyledPageNavLink>{'Work History'}</StyledPageNavLink>
+                    </Link>
+                </StyledUnorderedList>
+                <StyledUnorderedList>
+                    <Link href="/career-portfolio/contact-me">
+                        <StyledPageNavLink>{'Contact Me!'}</StyledPageNavLink>
+                    </Link>
+                </StyledUnorderedList>
+            </PageNavContainer>
+        </IntroBodyTextConatiner>
+    </IntroductionContainer>;
 
 export default LandingPage;

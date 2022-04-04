@@ -2,8 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Header from './layout-components/header';
+import SocialList from './layout-components/social-list';
 
 const LayoutStyle = styled.div`
+    background-color: #0a192e;
     display: 'flex';
     flexDirection: 'column';
     height: '100%';
@@ -11,7 +13,6 @@ const LayoutStyle = styled.div`
 `;
 const ContentStyle = styled.div`
     position: absolute;
-    background-color: #0a192e;
     top: 10%;
     left: 0;
     right: 0;
