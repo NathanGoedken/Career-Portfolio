@@ -76,11 +76,6 @@ const LandingPage = () =>
                         <StyledPageNavLink>{'Work History'}</StyledPageNavLink>
                     </Link>
                 </StyledUnorderedList>
-                <StyledUnorderedList>
-                    <Link href="/career-portfolio/contact-me">
-                        <StyledPageNavLink>{'Contact Me!'}</StyledPageNavLink>
-                    </Link>
-                </StyledUnorderedList>
             </PageNavContainer>
         </IntroBodyTextConatiner>
     </IntroductionContainer>;

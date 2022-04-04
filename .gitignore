@@ -6,6 +6,7 @@ _next
 
 # dependencies
 /node_modules
+/src/client/.next
 /.pnp
 .pnp.js
 
