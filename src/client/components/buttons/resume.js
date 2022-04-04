@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Link from 'next/link';
 
 const StyledEmailLink = styled.a`
     color: #64ffda;
@@ -15,13 +16,12 @@ const StyledEmailLink = styled.a`
 
 const Resume = () =>
     <div>
-        <StyledEmailLink
-            href="/resume.pdf"
-            rel="noopener noreferrer"
-            target="_blank"
-        >
-            {'Resume'}
-        </StyledEmailLink>
+        <Link href={'./resume.pdf'}>
+            <StyledEmailLink
+            >
+                {'Resume'}
+            </StyledEmailLink>
+        </Link>
     </div>;
 
 export default Resume;
