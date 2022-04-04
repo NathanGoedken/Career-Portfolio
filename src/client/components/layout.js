@@ -1,9 +1,7 @@
 import React from 'react';
-import Image from 'next/image';
 import styled from 'styled-components';
 
 import Header from './layout-components/header';
-import homePageBackground from '../../public/homepage.png';
 
 const LayoutStyle = styled.div`
     display: 'flex';
@@ -13,25 +11,25 @@ const LayoutStyle = styled.div`
 `;
 const ContentStyle = styled.div`
     position: absolute;
+    background-color: #0a192e;
     top: 10%;
     left: 0;
     right: 0;
     height: 90%;
+`;
+const StyledBodyContentContainer = styled.div`
     margin-left: 10%;
     margin-right: 10%;
 `;
-const StyledBodyContentContainer = styled.div``;
 
-const RedboxRx = props => (
+const Layout = props => (
     <LayoutStyle>
         <Header />
         <ContentStyle>
-            {/* <div style={{background: homePageBackground}}>Text here</div> */}
             <StyledBodyContentContainer>
                 {props.children}
             </StyledBodyContentContainer>
-            {/* <Image src={homePageBackground} alt="homePage Background" /> */}
         </ContentStyle>
     </LayoutStyle>
 );
-export default RedboxRx;
+export default Layout;

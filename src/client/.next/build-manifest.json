@@ -25,15 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/career-portfolio/interests-and-hobbies": [
+    "/career-portfolio": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/career-portfolio/interests-and-hobbies.js"
+      "static/chunks/pages/career-portfolio.js"
     ],
-    "/career-portfolio/work-history": [
+    "/career-portfolio/about-me": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/career-portfolio/work-history.js"
+      "static/chunks/pages/career-portfolio/about-me.js"
     ]
   },
   "ampFirstPages": []

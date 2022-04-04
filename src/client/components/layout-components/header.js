@@ -47,11 +47,6 @@ const Header = () =>
                 </Link>
             </StyledLinksContainer>
             <StyledLinksContainer>
-                <Link href={'/career-portfolio/interests-and-hobbies'}>
-                    <StyledLink>{'Interests and Hobbies'}</StyledLink>
-                </Link>
-            </StyledLinksContainer>
-            <StyledLinksContainer>
                 <Link href={'/career-portfolio/work-history'}>
                     <StyledLink>{'Work History'}</StyledLink>
                 </Link>
