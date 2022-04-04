@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components';
+import Resume from '../buttons/resume';
 
 const StyledHeaderContainer = styled.div`
     background-color: #000000;
@@ -53,7 +54,7 @@ const Header = () =>
             </StyledLinksContainer>
             <StyledLinksContainer>
                 <Link href={'/career-portfolio/contact-me'}>
-                    <StyledLink>{'Contact Me'}</StyledLink>
+                    <Resume />
                 </Link>
             </StyledLinksContainer>
         </StyledHeaderContentContainer>
