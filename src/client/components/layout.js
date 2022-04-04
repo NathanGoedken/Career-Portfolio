@@ -15,7 +15,6 @@ const ContentStyle = styled.div`
     top: 10%;
     left: 0;
     right: 0;
-    height: 90%;
 `;
 const StyledBodyContentContainer = styled.div`
     margin-left: 10%;

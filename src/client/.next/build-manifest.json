@@ -30,10 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/career-portfolio.js"
     ],
-    "/career-portfolio/about-me": [
+    "/career-portfolio/work-history": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/career-portfolio/about-me.js"
+      "static/chunks/pages/career-portfolio/work-history.js"
     ]
   },
   "ampFirstPages": []

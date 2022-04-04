@@ -3,8 +3,15 @@ import styled from 'styled-components';
 
 import Layout from '../../components/layout';
 
+const Header = styled.h1`
+    color: #ccd6f6; 
+    font-size: clamp(40px, 8vw, 80px);
+    margin-bottom: 0;
+    margin-top: 0;
+`;
+
 const StyledWorkHistoryContainer = styled.div`
-    background: url('../../public/homepage.png');
+    margin-top: 50px;
 `;
 const StyledExperienceContainer = styled.div`
     display: 'flex';
@@ -17,10 +24,12 @@ const StyledExperienceBodyContent = styled.div`
 `;
 
 const StyledExperienceText = styled.p`
+    color: #8893af;
     margin-bottom: -10px;
 `;
 
 const StyledExperienceHeaderText = styled.h4`
+    color: #50e169;
     margin-bottom: -10px;
     font-size: 30px;
     text-decoration: underline;
@@ -29,7 +38,7 @@ const StyledExperienceHeaderText = styled.h4`
 const WorkHistory = () =>
     <Layout>
         <StyledWorkHistoryContainer>
-            <h2>{'Experience'}</h2>
+            <Header>{'Experience'}</Header>
             <StyledExperienceBodyContent>
                 <StyledExperienceHeaderText>{'Hy-Vee, Inc.'}</StyledExperienceHeaderText>
                 <div>
@@ -50,7 +59,7 @@ const WorkHistory = () =>
                     </StyledExperienceContainer>
                 </div>
             </StyledExperienceBodyContent>
-            
+
             <StyledExperienceBodyContent>
                 <StyledExperienceHeaderText>{'Casey\'s General Store'}</StyledExperienceHeaderText>
                 <div>
