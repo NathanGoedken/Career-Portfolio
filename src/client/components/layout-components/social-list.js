@@ -14,34 +14,56 @@ const SocialListContainer = styled.div`
     color: var(--light-slate);
 `;
 
+const ListContainer = styled.ul`
+    list-style-type: none;
+`;
+
+const StyledList = styled.li`
+    padding-bottom: 10px;
+`;
+
+const StyledLink = styled.a`
+    color: #8893af;
+    
+    :hover {
+        color: #50e169;
+    }
+`;
+
 const SocialList = () =>
     <SocialListContainer>
-        <ul>
-            <li>
-                <a href="https://github.com/NathanGoedken">
+        <ListContainer>
+            <StyledList>
+                <StyledLink
+                    href="https://github.com/NathanGoedken"
+                >
                     <GithubLogo
                         height='25px'
                         width='25px'
                     />
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/NathanGoedken">
+                </StyledLink>
+            </StyledList>
+            <StyledList>
+                <StyledLink
+                    href="https://github.com/NathanGoedken"
+                >
                     <TwitterLogo
                         height='25px'
                         width='25px'
                     />
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/nathan-goedken-543129a7">
+                </StyledLink>
+            </StyledList>
+            <StyledList>
+                <StyledLink
+                    href="https://www.linkedin.com/in/nathan-goedken-543129a7"
+                >
                     <LinkedInLogo
                         height='25px'
                         width='25px'
                     />
-                </a>
-            </li>
-        </ul>
+                </StyledLink>
+            </StyledList>
+        </ListContainer>
     </SocialListContainer>;
 
 export default SocialList;
