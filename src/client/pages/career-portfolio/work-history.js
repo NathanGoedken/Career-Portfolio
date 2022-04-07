@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Header = styled.h1`
     color: #ccd6f6; 
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(40px, 8vw, 60px);
     margin-bottom: 0;
     margin-top: 0;
 `;
@@ -35,7 +35,7 @@ const StyledExperienceHeaderText = styled.h4`
 
 const WorkHistory = () =>
     <StyledWorkHistoryContainer>
-        <Header>{'Experience'}</Header>
+        <Header>{'Where I Have Worked'}</Header>
         <StyledExperienceBodyContent>
             <StyledExperienceHeaderText>{'Hy-Vee, Inc.'}</StyledExperienceHeaderText>
             <div>
