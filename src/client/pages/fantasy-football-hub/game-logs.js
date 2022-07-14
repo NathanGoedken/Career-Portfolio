@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import fetch from 'node-fetch';
 
 const SectionHeader = styled.h2`
     alignItems: center;
@@ -35,21 +34,6 @@ const StyledExperienceText = styled.p`
 
 const GameLogs = () => {
     const [playerName, setPlayerName] = useState('');
-    const [playerStats, setPlayerStats] = useState('');
-
-    const footballUrl = 'http://api.espn.com/v1/sports/baseball/mlb/athletes/teams/2'
-
-    const submit = async (playerName) => {
-        if (playerName !== '') {
-            const fetchPlayerStats = await fetch(footballUrl);
-
-            const response = await fetchPlayerStats.text();
-
-            // fetch(footballUrl).then(response => response.json()).then(data => console.log(data))
-
-            setPlayerStats(response);
-        }
-    }
 
     return (
         <StyledAboutMeContainer>
@@ -65,12 +49,8 @@ const GameLogs = () => {
                             setPlayerName(e.target.value);
                         }} 
                     />
-                    <button onClick={() => submit(playerName)}>{'Search'}</button>
                 </div>
             </StyledExperienceBodyContent>
-            <>
-                {`${playerStats}`}
-            </>
         </StyledAboutMeContainer>
     );
 };
