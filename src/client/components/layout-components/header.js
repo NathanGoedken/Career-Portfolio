@@ -38,22 +38,22 @@ const Header = () =>
     <StyledHeaderContainer>
         <StyledHeaderContentContainer>
             <StyledLinksContainer>
-                <Link href={'/career-portfolio'}>
-                    <StyledLink>{'Nathan Goedken'}</StyledLink>
+                <Link href={'/fantasy-football-hub'}>
+                    <StyledLink>{'Home'}</StyledLink>
                 </Link>
             </StyledLinksContainer>
             <StyledLinksContainer>
-                <Link href={'/career-portfolio/about-me'}>
-                    <StyledLink>{'About Me'}</StyledLink>
+                <Link href={'/fantasy-football-hub/game-logs'}>
+                    <StyledLink>{'Game Logs'}</StyledLink>
                 </Link>
             </StyledLinksContainer>
             <StyledLinksContainer>
-                <Link href={'/career-portfolio/work-history'}>
-                    <StyledLink>{'Work History'}</StyledLink>
+                <Link href={'/fantasy-football-hub/about-fantasy-football-hub'}>
+                    <StyledLink>{'About'}</StyledLink>
                 </Link>
             </StyledLinksContainer>
             <StyledLinksContainer>
-                <Link href={'/career-portfolio/contact-me'}>
+                <Link href={'/fantasy-football-hub/contact-me'}>
                     <Resume />
                 </Link>
             </StyledLinksContainer>
