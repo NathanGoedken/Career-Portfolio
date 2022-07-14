@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import fetch from 'node-fetch';
 
 const SectionHeader = styled.h2`
     alignItems: center;
@@ -36,16 +37,19 @@ const GameLogs = () => {
     const [playerName, setPlayerName] = useState('');
     const [playerStats, setPlayerStats] = useState('');
 
-    const espnUrl = 'http://api.espn.com/v1/sports/baseball/mlb/athletes/teams/2';
-    const yahooUrl = 'https://fantasysports.yahooapis.com/fantasy/v2/player/';
-    const testSportsDbUrl = 'https://www.thesportsdb.com/api/v1/json/2/searchplayers.php?p=Danny%20Welbeck';
+    const footballUrl = 'http://api.espn.com/v1/sports/baseball/mlb/athletes/teams/2'
 
     const submit = async (playerName) => {
         if (playerName !== '') {
-            const fetchPlayerStats = await fetch(testSportsDbUrl).then(response => response.json()).then(data => setPlayerStats(data));
-            // console.log('playerStats', playerStats.player[0].strDescriptionEN);
+            const fetchPlayerStats = await fetch(footballUrl);
+
+            const response = await fetchPlayerStats.text();
+
+            // fetch(footballUrl).then(response => response.json()).then(data => console.log(data))
+
+            setPlayerStats(response);
         }
-    };
+    }
 
     return (
         <StyledAboutMeContainer>
@@ -64,10 +68,9 @@ const GameLogs = () => {
                     <button onClick={() => submit(playerName)}>{'Search'}</button>
                 </div>
             </StyledExperienceBodyContent>
-            {playerStats.player.length > 0 &&
-                <>
-                    {`${playerStats.player[0].strDescriptionEN}`}
-                </>}
+            <>
+                {`${playerStats}`}
+            </>
         </StyledAboutMeContainer>
     );
 };
